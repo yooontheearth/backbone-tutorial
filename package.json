@@ -2,7 +2,7 @@
   "name": "backbone-tutorial-amago",
   , "version": "0.0.1"
   , "private": true
-  , "description": "Backbone tutorial sample AMAGO"
+  , "description": "Backbone tutorial AMAGO"
   , "author": "Yoo Matsuo"
   , "license": "BSD"
   , "dependencies": {

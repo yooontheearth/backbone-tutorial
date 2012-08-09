@@ -133,9 +133,6 @@
 
   DetailsView = Backbone.View.extend({
     template: _.template($('#tpl-details').html()),
-    initialize: function() {
-      return this.model.bind('change', this.render, this);
-    },
     render: function() {
       $(this.el).html(this.template(this.model.toJSON()));
       if (this.options.hideDelete) {
