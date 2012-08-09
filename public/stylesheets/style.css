@@ -1,0 +1,42 @@
+#main {
+  width: 800px;
+}
+#list {
+  float: left;
+}
+#list table {
+  table-layout: fixed;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+#list table tr.selected > td {
+  background: #d5fac8;
+}
+#list table td {
+  padding: 3px;
+  border: 1px solid #cca;
+  cursor: pointer;
+  overflow: hidden;
+}
+#list table td.name {
+  width: 200px;
+}
+#details {
+  float: left;
+  margin-left: 20px;
+  width: 400px;
+}
+#details textarea,
+#details input {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 350px;
+}
+label {
+  display: block;
+}
+button {
+  height: 30px;
+  width: 100px;
+  margin: 2px;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "backbone-tutorial-amago",
+  , "version": "0.0.1"
+  , "private": true
+  , "description": "Backbone tutorial sample AMAGO"
+  , "author": "Yoo Matsuo"
+  , "license": "BSD"
+  , "dependencies": {
+      	"express": "2.5.0" ,
+		"commander" : "0.3.0",
+		"jsdom" : "0.2.14",
+		"jade" : "0.26.0",
+		"stylus" : "0.23.0"
+	  }
+}

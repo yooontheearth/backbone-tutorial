@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	h1= title
+	#main
+		#header
+		#list
+		#details
+
+block script
+	script( type='text/javascript')
+		var _bushoList = !{JSON.stringify(bushoList)};
+
+	script( type='text/template', id='tpl-header')
+		button#refresh 更新
+		button#add 追加
+
+	script( type='text/template', id='tpl-list-item')
+		td <%= id || '' %>
+		td.name <%= name || '' %>
+
+	script( type='text/template', id='tpl-details')
+		label 名称
+		input(type='text', name='name', value!='<%= name || "" %>')
+		label 説明
+		textarea(type='text', name='description') <%= description || "" %>
+		label 画像
+		input(type='text', name='imageUrl', value!='<%= imageUrl || "" %>')
+		img(src!='<%= imageUrl || "" %>', height='350', width='350')
+		div
+			button#save 保存
+			button#delete 削除
+
+	script( src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js")
+	script( src="javascripts/underscore-min.js")
+	script( src="javascripts/backbone-min.js")
+	script( src="javascripts/index.js")
